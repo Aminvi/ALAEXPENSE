@@ -4,12 +4,14 @@ const nextConfig = {
         unoptimized:true
     }
 };
-module.exports = {
+// next.config.mjs
+export default {
   webpack: (config) => {
     config.resolve.alias['@'] = path.resolve(__dirname);
     return config;
   },
 };
+
 
 
 export default nextConfig;
